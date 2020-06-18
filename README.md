@@ -1,5 +1,5 @@
 # Getting and Cleaning Data Course Project
-A simple analysis to tidy the data collected from the accelerometers from the Samsung Galaxy S smartphone, available [here](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
+A simple analysis to tidy the data collected from the accelerometers of Samsung Galaxy S smartphone, available [here](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
 
 ### Files
 * `run_analysis.R` - R script that merges, extracts, labels, and summarizes the data
@@ -8,6 +8,6 @@ A simple analysis to tidy the data collected from the accelerometers from the Sa
 * `README.md` - Current file
 
 ### Getting started
-1. Download [experiment data](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
-2. Refer to [CodeBook]() for information on experiment data and project workflow
+1. Download [experiment data](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+2. Refer to [CodeBook](https://github.com/shumengk/Getting-Cleaning-Data-ProgrammingAssignment/blob/master/CodeBook.md) for information on experiment data and project workflow
 3. Run `run_analysis.R`
