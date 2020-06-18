@@ -18,6 +18,7 @@ train_x <- read.table("train/X_train.txt")
 # on the mean and standard deviation of each measurement
 train <- data.frame(subject_train, train_y, train_x[,colNum])
 
+# Remove unnecessary intermediate files
 rm(subject_train, train_y, train_x)
 
 # Load testing data
@@ -29,6 +30,7 @@ test_x <- read.table("test/x_test.txt")
 # on the mean and standard deviation of each measurement
 test <- data.frame(subject_test, test_y, test_x[,colNum])
 
+# Remove unnecessary intermediate files
 rm(subject_test, test_y, test_x)
 
 # Combine training and test sets
@@ -40,7 +42,7 @@ colnames(total) <- c("Subject_ID", "Activity_Label", colName)
 # Replace the activity labels with descriptive names
 total$Activity_Label <- activity[match(total$Activity_Label,activity$V1),"V2"]
 
-# Compute
+# Compute the average of each variable for each activity and each subject
 dat.summary <- total %>% group_by(Subject_ID, Activity_Label) %>%
   summarise_all(mean)
 
